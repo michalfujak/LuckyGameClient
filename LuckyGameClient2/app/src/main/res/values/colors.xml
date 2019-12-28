@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Colors -->
+<!-- Metro styles -->
+<!-- Color theme [ Deep Blue 60 AND Blue Gray 50 AND Teal 50 AND Orange 50 ] -->
+<resources>
+    <color name="colorPrimary">#012F47</color>                                                      <!-- DeepBlue 60 700 -->
+    <color name="colorPrimaryDark">#01202F</color>                                                  <!-- DeepBlue 60 800 -->
+    <color name="colorAccent">#03a4f5</color>                                                       <!-- DeepBlue 60 100 -->
+    <color name="colorNavigonBar">#01202F</color>                                                   <!-- DeepBlue 60 800 -->
+    <!-- View LinearLayout -->
+    <color name="colorLinearLayoutBackgroundView">#B0BEC5</color>                                   <!-- BlueGray 50 200 -->
+    <!-- LinearLayout modelPageOne Background -->
+    <color name="colorLinearLayoutBackgroundViewPageOne">#E1263238</color>                          <!-- BlueGray 50 900     --><!-- Opacity 90% -->
+    <!-- linearLayout modelPageTwo Background -->
+    <color name="colorLinearLayoutBackgroundViewPageTwo">#E1263238</color>                          <!-- BlueGray 50 900     --><!-- Opacity 90% -->
+    <!-- LinearLayout modelPageThreeButton Background -->
+    <color name="colorLinearLayoutBackgroundViewPageThreeButton">#E1263238</color>                  <!-- BlueGray 50 900     --><!-- Opacity 90% -->
+    <!-- Score TextArea Background Text.component -->
+    <color name="colorScoreBackgroundTextArea">#E1263238</color>                                    <!-- BlueGray 50 900     --><!-- Opacity 90% -->
+    <color name="colorScoreTextColor">#90A4AE</color>                                               <!-- BlueGray 50 300 -->
+    <!-- Result TextArea Background Text.component -->
+    <color name="colorResultBackgroundTextArea">#80CBC4</color>                                     <!-- Teal 50 200     -->
+    <color name="colorResultTextColor">#01202F</color>                                              <!-- DeepBlue 60 800 -->
+    <!-- Count TextArea Background Text.component -->
+    <color name="colorCountBackgroundTextArea">#90A4AE</color>                                      <!-- BlueGray 50 300 -->
+    <color name="colorCountTextColor">#90A4AE</color>                                               <!-- BlueGray 50 300 -->
+    <!-- Money TextArea Background Text.component -->
+    <color name="colorMoneyBackgroundTextArea">#FF9800</color>                                      <!-- Orange 50 500   -->
+    <color name="colorMoneyTextColor">#01202F</color>                                               <!-- DeepBlue 60 800 -->
+    <!-- Viewcard.V7 background glass, [ transparentColor ] -->
+    <color name="viewcard_v7_glass">#00000000</color>
+    <!-- EditText BetValue colors -->
+    <color name="colorEditTextBetValueTextColor">#ECEFF1</color>                                    <!-- BlueGray 50 100     -->
+    <color name="colorEditTextBetValueTextColorHint">#ECEFF1</color>                                <!-- BlueGray 50 100     -->
+    <color name="colorEditTextBetValueBackground">#004D40</color>                                   <!-- Teal 50 900     -->
+    <!-- EditText MoneyValue colors -->
+    <color name="colorEditTextMoneyValueTextColor">#ECEFF1</color>                                  <!-- BlueGray 50 100     -->
+    <color name="colorEditTextMoneyValueTextColorHint">#ECEFF1</color>                              <!-- BlueGray 50 100     -->
+    <color name="colorEditTextMoneyValueBackground">#004D40</color>                                 <!-- Teal 50 900     -->
+    <!-- Button submit styles -->
+    <color name="colorButtonSubmitBackground">#004D40</color>                                       <!-- Teal 50 900     -->
+    <color name="colorButtonSubmitColorText">#4DB6AC</color>                                        <!-- Teal 50 300     -->
+    <!-- Button disconnent styles -->
+    <color name="colorButtonDisconnectBackground">#004D40</color>                                   <!-- Teal 50 900     -->
+    <color name="colorButtonDisconnectColorText">#4DB6AC</color>                                    <!-- Teal 50 300     -->
+
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Metro styles -->
+<!-- Color theme [ Deep Blue 60 AND Blue Gray 50 AND Orange60 ] -->
+<resources>
+    <style name="score_view_text" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <!-- ViewText Count -->
+    <style name="count_view_text" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textColor">@color/colorCountTextColor</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <!-- ViewText Result -->
+    <style name="result_view_text" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">@color/colorResultTextColor</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <!-- ViewText Money -->
+    <style name="money_view_text" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">@color/colorMoneyTextColor</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <!-- ModulPageOne LinearLayout -->
+    <style name="modul_page_one_linearlayout" parent="Base.Widget.AppCompat.Spinner.Underlined">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <!-- ModulPageTwo LinearLayout -->
+    <style name="modul_page_two_linearlayout" parent="Base.Widget.AppCompat.Spinner.Underlined">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <!-- ModulPageThree LinearLayout -->
+    <style name="modul_page_three_linearlayout_button" parent="Base.Widget.AppCompat.Spinner.Underlined">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <!-- MaterialEditText BetValue -->
+    <style name="bet_value_edit_text1" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorEditTextBetValueTextColor</item>
+        <item name="android:textColorHint">@color/colorEditTextBetValueTextColorHint</item>
+        <item name="android:background">@color/colorEditTextBetValueBackground</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+    </style>
+    <!-- MaterialEditText MoneyValue -->
+    <style name="money_value_edit_text2" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorEditTextMoneyValueTextColor</item>
+        <item name="android:textColorHint">@color/colorEditTextMoneyValueTextColorHint</item>
+        <item name="android:background">@color/colorEditTextMoneyValueBackground</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+    </style>
+    <!-- Button submit -->
+    <style name="submit_button" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textColor">@color/colorSubmitButtonTextColor</item>
+    </style>
+    <!-- Button disconnect -->
+    <style name="disconnect_button" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textColor">@color/colorDisconnectButtonTextColor</item>
+    </style>
+</resources>

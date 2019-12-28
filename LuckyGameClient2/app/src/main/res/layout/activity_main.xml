@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:background="@drawable/luckygameclientbackgroundview"
+    >
+    <!-- Score DIV.TextView.Component -->
+    <TextView
+        android:id="@+id/scoreTextViewDisplay"
+        android:background="@drawable/score_view_text_background"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/score_default_value"
+        android:textColor="@color/colorScoreTextColor"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:weightSum="3">
+        <!-- View.component -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <!-- Android.View.Card.7V.Component -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/viewCard1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="20dp"
+            app:cardBackgroundColor="@color/viewcard_v7_glass"
+            >
+            <!-- LinearLayout ModulPageOne -->
+            <LinearLayout
+                style="@style/modul_page_one_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linear_layout_model_page_one"
+                android:orientation="vertical">
+                <!-- TextView Score count -->
+                <TextView
+                    android:id="@+id/textCount"
+                    style="@style/count_view_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_timeline_24dp"
+                    android:text="@string/count_value" />
+                <!-- TextView Result -->
+                <TextView
+                    android:id="@+id/textResult"
+                    style="@style/result_view_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/result_view_text_background"
+                    android:text="@string/result_value"
+                    android:visibility="visible" />
+                <!-- TextView Money -->
+                <TextView
+                    android:id="@+id/textMoney"
+                    style="@style/money_view_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/money_view_text_background"
+                    android:text="@string/money_value"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- LinearLayout ModulPageTwo -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_layout_model_page_two"
+            style="@style/modul_page_two_linearlayout"
+            >
+
+            <!-- MaterialEditText and EditText -->
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bet_value_style_edit_text"
+                android:hint="@string/bet_value_hint_text"
+                android:textSize="18sp"
+                style="@style/bet_value_edit_text1"
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_underlineColor="@color/colorEditTextBetValueTextColorHint"
+                app:met_baseColor="@color/colorEditTextBetValueTextColorHint"
+                android:drawablePadding="15dp"
+                app:met_maxCharacters="9"
+                android:drawableStart="@drawable/ic_bet_value_icon_24dp"
+                />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/money_value_style_edit_text"
+                android:hint="@string/money_value_text"
+                android:textSize="18sp"
+                style="@style/money_value_edit_text2"
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_underlineColor="@color/colorEditTextMoneyValueTextColorHint"
+                app:met_baseColor="@color/colorEditTextMoneyValueTextColorHint"
+                android:drawablePadding="15dp"
+                app:met_maxCharacters="9"
+                android:drawableStart="@drawable/ic_money_euro_icon_24dp"
+                />
+
+        </LinearLayout>
+        <!-- LinearLayout Three page Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/linear_layout_model_page_three_buttons"
+            style="@style/modul_page_three_linearlayout_button"
+            >
+            <!-- Button submit -->
+            <Button
+                android:id="@+id/button_submit_action"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/button_submit_text"
+                android:layout_weight="1"
+                android:background="@drawable/button_submit_background"
+                style="@style/submit_button"
+                />
+            <!-- Button disconnect -->
+            <Button
+                android:id="@+id/button_disconnect"
+                style="@style/disconnect_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_disconnect_background"
+                android:text="@string/button_disconnect" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

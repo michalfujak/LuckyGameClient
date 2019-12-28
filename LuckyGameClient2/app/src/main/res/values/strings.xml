@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lucky Game Client2</string>
+    <string name="count_value">Timer: Disconnect</string>
+    <string name="result_value">0</string>
+    <string name="money_value">0</string>
+    <string name="score_default_value">1000</string>
+    <string name="bet_value_hint_text">Enter your to bet Value</string>
+    <string name="money_value_text">Enter your to money Value</string>
+    <string name="button_submit_text">Submit</string>
+    <string name="button_disconnect">Disconnect</string>
+</resources>
+<!-- URL https://www.youtube.com/watch?v=GW2ovTrIgsc&t=1543s, Time: 37:55 -->

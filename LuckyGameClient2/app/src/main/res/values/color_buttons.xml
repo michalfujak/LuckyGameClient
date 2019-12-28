@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Colors -->
+<!-- Metro styles -->
+<!-- Color theme [ Deep Blue 60 AND Blue Gray 50 AND Teal 50 AND Orange 50 ] -->
+<resources>
+    <!-- Submit Home Press  -->
+    <color name="colorSubmitHomePressStart">#012F47</color>                                         <!-- DeepBlue 60 700 -->
+    <color name="colorSubmitHomePressCenter">#01476A</color>                                        <!-- DeepBlue 60 600 -->
+    <color name="colorSubmitHomePressEnd">#012F47</color>                                           <!-- DeepBlue 60 700 -->
+    <!-- Submit Home Default  -->
+    <color name="colorSubmitHomeDefaultStart">#6A1B9A</color>                                       <!-- Purple 50 800 -->
+    <color name="colorSubmitHomeDefaultCenter">#7B1FA2</color>                                      <!-- Purple 50 700 -->
+    <color name="colorSubmitHomeDefaultEnd">#6A1B9A</color>                                         <!-- Purple 50 800 -->
+    <!-- Submit Button All -->
+    <color name="colorSubmitButtonTextColor">#ECEFF1</color>                                        <!-- BlueGray 50 100 -->
+    <color name="colorDisconnectButtonTextColor">#FFF3E0</color>                                    <!-- Orange 50 100 -->
+    <!-- Disconnect Home Press  -->
+    <color name="colorDisconnectHomePressStart">#F57C00</color>                                     <!-- Orange 50 700 -->
+    <color name="colorDisconnectHomePressCenter">#FB8C00</color>                                    <!-- Orange 50 600 -->
+    <color name="colorDisconnectHomePressEnd">#F57C00</color>                                       <!-- Orange 50 700 -->
+    <!-- Disconnect Home Default  -->
+    <color name="colorDisconnectHomeDefaultStart">#E64A19</color>                                   <!-- DeepOrange 50 700 -->
+    <color name="colorDisconnectHomeDefaultCenter">#F4511E</color>                                  <!-- DeepOrange 50 600 -->
+    <color name="colorDisconnectHomeDefaultEnd">#E64A19</color>                                     <!-- DeepOrange 50 700 -->
+</resources>
