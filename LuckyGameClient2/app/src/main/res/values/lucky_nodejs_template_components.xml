@@ -50,8 +50,8 @@
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:textSize">24sp</item>
     </style>
-    <!-- ModulPageOne LinearLayout -->
-    <style name="modul_page_one_linearlayout" parent="Base.Widget.AppCompat.Spinner.Underlined">
+    <!-- LinearLayout MODUL - Panel1 ( Oblast Score ) -->
+    <style name="linearlayout_panel1" parent="Base.Widget.AppCompat.Spinner.Underlined">
         <item name="android:layout_marginTop">0dp</item>
         <item name="android:layout_marginBottom">0dp</item>
         <item name="android:layout_marginRight">0dp</item>
@@ -61,8 +61,8 @@
         <item name="android:paddingTop">10dp</item>
         <item name="android:paddingBottom">10dp</item>
     </style>
-    <!-- ModulPageTwo LinearLayout -->
-    <style name="modul_page_two_linearlayout" parent="Base.Widget.AppCompat.Spinner.Underlined">
+    <!-- LinearLayout MODUL - Panel2 ( Oblast Material - TextEdit ) -->
+    <style name="linearlayout_panel2" parent="Base.Widget.AppCompat.Spinner.Underlined">
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_marginBottom">0dp</item>
         <item name="android:layout_marginRight">0dp</item>
@@ -72,14 +72,25 @@
         <item name="android:paddingTop">10dp</item>
         <item name="android:paddingBottom">10dp</item>
     </style>
-    <!-- ModulPageThree LinearLayout -->
-    <style name="modul_page_three_linearlayout_button" parent="Base.Widget.AppCompat.Spinner.Underlined">
+    <!-- LinearLayout MODUL - Panel3 ( Oblast Buttons ) -->
+    <style name="linearlayout_panel3" parent="Base.Widget.AppCompat.Spinner.Underlined">
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_marginBottom">0dp</item>
         <item name="android:layout_marginRight">0dp</item>
         <item name="android:layout_marginLeft">0dp</item>
         <item name="android:paddingRight">10dp</item>
         <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <!-- LinearLayout MODUL - Panel4 ( Oblast Bottom Status ) -->
+    <style name="linearlayout_panel4" parent="Base.Widget.AppCompat.Spinner.Underlined">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
         <item name="android:paddingTop">10dp</item>
         <item name="android:paddingBottom">10dp</item>
     </style>
@@ -140,5 +151,21 @@
         <item name="android:paddingStart">20dp</item>
         <item name="android:paddingEnd">20dp</item>
         <item name="android:textColor">@color/colorDisconnectButtonTextColor</item>
+    </style>
+    <!-- TextView HomeStatus -->
+    <style name="text_view_home_status" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:textColor">@color/colorHomeStatusTextColor</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
     </style>
 </resources>

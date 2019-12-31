@@ -4,6 +4,7 @@
     <string name="result_value">0</string>
     <string name="money_value">0</string>
     <string name="score_default_value">1000</string>
+    <string name="home_status_value">1000</string>
     <string name="bet_value_hint_text">Enter your to bet Value</string>
     <string name="money_value_text">Enter your to money Value</string>
     <string name="button_submit_text">Submit</string>

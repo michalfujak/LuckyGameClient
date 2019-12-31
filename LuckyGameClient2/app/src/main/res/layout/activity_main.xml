@@ -42,12 +42,12 @@
             app:cardElevation="20dp"
             app:cardBackgroundColor="@color/viewcard_v7_glass"
             >
-            <!-- LinearLayout ModulPageOne -->
+            <!-- LinearLayout ModulPage1 -->
             <LinearLayout
-                style="@style/modul_page_one_linearlayout"
+                style="@style/linearlayout_panel1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/linear_layout_model_page_one"
+                android:background="@drawable/linear_layout_background_panel1"
                 android:orientation="vertical">
                 <!-- TextView Score count -->
                 <TextView
@@ -80,14 +80,14 @@
 
         </android.support.v7.widget.CardView>
 
-        <!-- LinearLayout ModulPageTwo -->
+        <!-- LinearLayout ModulPage2 -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/linear_layout_model_page_two"
-            style="@style/modul_page_two_linearlayout"
+            android:background="@drawable/linear_layout_background_panel2"
+            style="@style/linearlayout_panel2"
             >
 
             <!-- MaterialEditText and EditText -->
@@ -123,14 +123,14 @@
                 />
 
         </LinearLayout>
-        <!-- LinearLayout Three page Buttons -->
+        <!-- LinearLayout ModulPage3 Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/linear_layout_model_page_three_buttons"
-            style="@style/modul_page_three_linearlayout_button"
+            android:background="@drawable/linear_layout_background_panel3"
+            style="@style/linearlayout_panel3"
             >
             <!-- Button submit -->
             <Button
@@ -154,6 +154,28 @@
 
         </LinearLayout>
 
+    </LinearLayout>
+    <!-- LinearLayout ModulPage4 status -->
+    <LinearLayout
+        style="@style/linearlayout_panel4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_vertical|center"
+        android:background="@drawable/linear_layout_background_panel4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextViewHomeStatus"
+            style="@style/text_view_home_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/home_status_value" />
     </LinearLayout>
 
 </FrameLayout>
