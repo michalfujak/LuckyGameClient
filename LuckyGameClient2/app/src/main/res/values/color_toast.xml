@@ -4,4 +4,7 @@
 <!-- Color theme [ Deep Blue 60 AND Blue Gray 50 AND Teal 50 AND Orange 50 ] -->
 <resources>
     <color name="example">#000000</color>                                                           <!-- Black 100 -->
+    <color name="colorToastableBackgroundNormal">#7B1FA2</color>                                    <!-- Purple 50 700 -->
+    <color name="colorToastableTextColorNormal">#ECEFF1</color>                                     <!-- BlueGray 50 100 -->
+    <color name="colorToastableStrokeColorNormal">#D500F9</color>                                   <!-- purple 50 A400 -->
 </resources>

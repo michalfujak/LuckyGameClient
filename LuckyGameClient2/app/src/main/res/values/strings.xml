@@ -9,5 +9,7 @@
     <string name="money_value_text">Enter your to money Value</string>
     <string name="button_submit_text">Submit</string>
     <string name="button_disconnect">Disconnect</string>
+    <string name="button_value_connect">Connect</string>
+    <string name="button_value_disconnect">Disconnect</string>
 </resources>
-<!-- URL https://www.youtube.com/watch?v=GW2ovTrIgsc&t=1543s, Time: 39:00 -->
+<!-- URL https://www.youtube.com/watch?v=GW2ovTrIgsc&t=1543s, Time: 42:10 -->
