@@ -36,10 +36,12 @@
     <!-- EditText BetValue colors -->
     <color name="colorEditTextBetValueTextColor">#ECEFF1</color>                                    <!-- BlueGray 50 100     -->
     <color name="colorEditTextBetValueTextColorHint">#ECEFF1</color>                                <!-- BlueGray 50 100     -->
+    <color name="colorEditTextBetValuePrimaryColorHelpText">#ECEFF1</color>                         <!-- BlueGray 50 100     -->
     <color name="colorEditTextBetValueBackground">#004D40</color>                                   <!-- Teal 50 900     -->
     <!-- EditText MoneyValue colors -->
     <color name="colorEditTextMoneyValueTextColor">#ECEFF1</color>                                  <!-- BlueGray 50 100     -->
     <color name="colorEditTextMoneyValueTextColorHint">#ECEFF1</color>                              <!-- BlueGray 50 100     -->
+    <color name="colorEditTextMoneyValuePrimaryColorHelpText">#ECEFF1</color>                       <!-- BlueGray 50 100     -->
     <color name="colorEditTextMoneyValueBackground">#004D40</color>                                 <!-- Teal 50 900     -->
     <!-- Button submit styles -->
     <color name="colorButtonSubmitBackground">#004D40</color>                                       <!-- Teal 50 900     -->

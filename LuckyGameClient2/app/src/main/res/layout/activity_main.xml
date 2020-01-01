@@ -103,7 +103,8 @@
                 app:met_underlineColor="@color/colorEditTextBetValueTextColorHint"
                 app:met_baseColor="@color/colorEditTextBetValueTextColorHint"
                 android:drawablePadding="15dp"
-                app:met_maxCharacters="9"
+                app:met_maxCharacters="5"
+                app:met_primaryColor="@color/colorEditTextBetValuePrimaryColorHelpText"
                 android:drawableStart="@drawable/ic_bet_value_icon_24dp"
                 />
             <com.rengwuxian.materialedittext.MaterialEditText
@@ -119,6 +120,7 @@
                 app:met_baseColor="@color/colorEditTextMoneyValueTextColorHint"
                 android:drawablePadding="15dp"
                 app:met_maxCharacters="9"
+                app:met_primaryColor="@color/colorEditTextMoneyValuePrimaryColorHelpText"
                 android:drawableStart="@drawable/ic_money_euro_icon_24dp"
                 />
 
