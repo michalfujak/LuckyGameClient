@@ -68,6 +68,70 @@ public class MainActivity extends AppCompatActivity {
                 isDisconnect = !isDisconnect;
             }
         });
+        //
+        // Clicked submit
+        button_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //
+                try
+                {
+                    // socket.connect();
+                    if(!canPlay) // DEBUG or true
+                    {
+                        // BET / Sazka
+                        if(!isBet)
+                        {
+                            // continue
+                        }
+                        else
+                        {
+                            StyleableToast.makeText(MainActivity.this, getString(R.string.lucky_game_message_you_already_turn), R.style.toast_lucky_game_blue_cube).show();
+                        }
+                    }
+                    else
+                    {
+                        // Play, to next turn
+                        StyleableToast.makeText(MainActivity.this, getString(R.string.lucky_game_message_next_turn), R.style.toast_lucky_game_blue_cube).show();
+                    }
+                }
+                catch(Exception exc)
+                {
+                    StyleableToast.makeText(v.getContext(), getString(R.string.exception_socket_client_message) + exc.getMessage(), R.style.toast_exception_error).show();
+                }
+            }
+        });
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,4 +7,19 @@
     <color name="colorToastableBackgroundNormal">#7B1FA2</color>                                    <!-- Purple 50 700 -->
     <color name="colorToastableTextColorNormal">#ECEFF1</color>                                     <!-- BlueGray 50 100 -->
     <color name="colorToastableStrokeColorNormal">#D500F9</color>                                   <!-- purple 50 A400 -->
+
+    <!-- Blue LuckyGame CUBE -->
+    <color name="colorToastableBackgroundLuckyGameBlue">#512DA8</color>                             <!-- Deep Purple 50 700 -->
+    <color name="colorToastableTextColorLuckyGameBlue">#ECEFF1</color>                              <!-- BlueGray 50 100 -->
+    <color name="colorToastableStrokeColorLuckyGameBlue">#6200EA</color>                            <!-- Deep Purple 50 A700 -->
+
+    <!-- Exception error colors -->
+    <color name="colorToastableBackgroundExceptionError">#DD2C00</color>                            <!-- Deep Red 50 A700 -->
+    <color name="colorToastableTextColorExceptionError">#ECEFF1</color>                             <!-- BlueGray 50 100 -->
+    <color name="colorToastableStrokeColorExceptionError">#FF3D00</color>                           <!-- Deep Red 50 A400 -->
+
+    <!-- Green done colors -->
+    <color name="colorToastableBackgroundDone">#2E7D32</color>                                      <!-- Green 50 800 -->
+    <color name="colorToastableTextColorDone">#ECEFF1</color>                                       <!-- BlueGray 50 100 -->
+    <color name="colorToastableStrokeColorDone">#00E676</color>                                     <!-- Green 50 A400 -->
 </resources>
