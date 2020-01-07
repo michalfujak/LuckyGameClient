@@ -9,8 +9,14 @@ import android.widget.TextView;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
+import org.json.JSONObject;
+
+import client2.game.lucky.luckygameclient2.Common.Common;
 import client2.game.lucky.luckygameclient2.R;
+import io.socket.client.IO;
 import io.socket.client.Socket;
+import io.socket.client.SocketIOException;
+import io.socket.emitter.Emitter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,13 +63,17 @@ public class MainActivity extends AppCompatActivity {
                 //
                 if(!isDisconnect)
                 {
-                    // socket.disconnect();
+                    socket.disconnect();
                     button_disconnect.setText(R.string.button_value_connect);
+                    // console information
+                    txt_status.setText(R.string.console_message_lucky_game_disconnect);
                 }
                 else
                 {
-                    // socket.connect();
+                    socket.connect();
                     button_disconnect.setText(R.string.button_value_disconnect);
+                    // console information
+                    txt_status.setText(R.string.console_mesaage_lucky_game_connect);
                 }
                 isDisconnect = !isDisconnect;
             }
@@ -77,15 +87,40 @@ public class MainActivity extends AppCompatActivity {
                 try
                 {
                     // socket.connect();
-                    if(!canPlay) // DEBUG or true
+                    if(canPlay) // DEBUG or true
                     {
                         // BET / Sazka
                         if(!isBet)
                         {
-                            // continue
+                            int money_bet_value = Integer.parseInt(edit_place_money.getText().toString());
+                            if(Common.score >= money_bet_value)
+                            {
+                                //
+                                // CREATE JSON Object send
+                                JSONObject jsonObject = new JSONObject();
+                                jsonObject.put("money", Integer.parseInt(edit_place_money.getText().toString()));
+                                jsonObject.put("betValue", Integer.parseInt(edit_place_value.getText().toString()));
+                                //
+                                socket.emit("client_send_money", jsonObject);
+                                //
+                                Common.score -= money_bet_value;
+                                // SK -> Priradenie do pola score
+                                // add score
+                                txt_score.setText(String.valueOf(Common.score));
+                                //
+                                // Anti multiple bet in 1 turn
+                                // SK -> Jeden nasobok pre jedno otocenie.
+                                isBet = true;
+                            }
+                            else
+                            {
+                                // You not enought money, please restart game!
+                                StyleableToast.makeText(MainActivity.this, getString(R.string.lucky_game_message_enought_money_restart_game) , R.style.toast_lucky_game_blue_cube).show();
+                            }
                         }
                         else
                         {
+                            // You already turn
                             StyleableToast.makeText(MainActivity.this, getString(R.string.lucky_game_message_you_already_turn), R.style.toast_lucky_game_blue_cube).show();
                         }
                     }
@@ -97,11 +132,69 @@ public class MainActivity extends AppCompatActivity {
                 }
                 catch(Exception exc)
                 {
+                    // Exception error Socket.Client error
                     StyleableToast.makeText(v.getContext(), getString(R.string.exception_socket_client_message) + exc.getMessage(), R.style.toast_exception_error).show();
                 }
             }
         });
 
+        //
+        // Connect socket
+        try
+        {
+            socket = IO.socket(getText(R.string.config_connect_ip).toString());
+            //
+            // SK -> Udalost a procesne vlakno ktore sa pripoji k serveru prostrednictvom JSONObject
+            //
+            socket.on(Socket.EVENT_CONNECT, new Emitter.Listener() {
+                @Override
+                public void call(Object... args) {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            StyleableToast.makeText(MainActivity.this, getString(R.string.message_connected_done), R.style.toast_green_done).show();
+                        }
+                    });
+                }
+            });
+            // connect
+            socket.connect();
+        }
+        catch(Exception exp)
+        {
+            // Error connect
+            StyleableToast.makeText(MainActivity.this, getString(R.string.exception_socket_connect_message) + exp.getMessage(), R.style.toast_exception_error).show();
+        }
+
+        // call method
+        registerAllEventForGame();
+
+    }
+
+    /*
+    * @function registerAllEventForGame
+    * @return null
+    *
+     */
+    private void registerAllEventForGame()
+    {
+        // register game
+        // call JS function broadcast
+        socket.on("broadcast", new Emitter.Listener() {
+            @Override
+            public void call(final Object... args) {
+                // Retriver time
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        txt_count.setText(new StringBuilder(getText(R.string.message_timer_txt)).append(args[0]));
+                        txt_result.setText("");
+                        txt_status.setText("");
+                        // continue
+                    }
+                });
+            }
+        });
     }
 }
 

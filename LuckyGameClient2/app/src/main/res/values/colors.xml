@@ -27,7 +27,7 @@
     <color name="colorCountBackgroundTextArea">#90A4AE</color>                                      <!-- BlueGray 50 300 -->
     <color name="colorCountTextColor">#90A4AE</color>                                               <!-- BlueGray 50 300 -->
     <!-- Color Home Status -->
-    <color name="colorHomeStatusTextColor">#FFFF00</color>                                          <!-- Yellow 50 A200 -->
+    <color name="colorHomeStatusTextColor">#AB47BC</color>                                          <!-- Purple 50 400 -->
     <!-- Money TextArea Background Text.component -->
     <color name="colorMoneyBackgroundTextArea">#FF9800</color>                                      <!-- Orange 50 500   -->
     <color name="colorMoneyTextColor">#01202F</color>                                               <!-- DeepBlue 60 800 -->

@@ -1,15 +1,33 @@
 <resources>
     <string name="app_name">Lucky Game Client2</string>
-    <string name="count_value">Timer: Disconnect</string>
+    <string name="count_value">Odpočet: Odpojenie</string>
     <string name="result_value">0</string>
     <string name="money_value">0</string>
     <string name="score_default_value">1000</string>
-    <string name="home_status_value">1000</string>
-    <string name="bet_value_hint_text">Enter your to bet Value</string>
-    <string name="money_value_text">Enter your to money Value</string>
-    <string name="button_submit_text">Submit</string>
-    <string name="button_disconnect">Disconnect</string>
-    <string name="button_value_connect">Connect</string>
-    <string name="button_value_disconnect">Disconnect</string>
+    <string name="home_status_value">Režim: Debug version 2.2.100</string>
+    <string name="bet_value_hint_text">Vlož svoju sázku</string>
+    <string name="money_value_text">Vlož svoje peniaze</string>
+    <string name="button_submit_text">Odoslať</string>
+    <string name="button_disconnect">Odpojiť</string>
+    <string name="button_value_connect">Pripojenie</string>
+    <string name="button_value_disconnect">Odpojenie</string>
+    <!-- Messages -->
+    <string name="message_connected_done">Pripojené</string>
+    <string name="message_timer_txt">Odpočet: </string>
+
+    <!-- Exception strings -->
+    <string name="exception_socket_client_message">Neočakavaná chyba pri pripojení k serveru. Prosím skontrolovať triedu io.socket.client.connect()</string>
+    <string name="exception_socket_connect_message">Neočakavaná chyba pri pripojení k serveru.</string>
+
+    <!-- Config.string -->
+    <string name="config_connect_ip">http://192.168.0.103:3000</string>
+
+    <!-- LuckyGame message -->
+    <string name="lucky_game_message_next_turn">Prosím počkajte na dalšie kolo.</string>
+    <string name="lucky_game_message_you_already_turn">V tomto kole už ste vsadili sázku.</string>
+    <string name="lucky_game_message_enought_money_restart_game">Nemate dostatok prostriedkov, prosím restatrujte hru.</string>
+    <!-- Console message status -->
+    <string name="console_mesaage_lucky_game_connect">Pripojené</string>
+    <string name="console_message_lucky_game_disconnect">Odpojenie</string>
 </resources>
-<!-- URL https://www.youtube.com/watch?v=GW2ovTrIgsc&t=1543s, Time: 42:10 -->
+<!-- URL https://www.youtube.com/watch?v=GW2ovTrIgsc&t=1543s, Time: 47:35 -->
