@@ -22,4 +22,17 @@
     <color name="colorDisconnectHomeDefaultStart">#E64A19</color>                                   <!-- DeepOrange 50 700 -->
     <color name="colorDisconnectHomeDefaultCenter">#F4511E</color>                                  <!-- DeepOrange 50 600 -->
     <color name="colorDisconnectHomeDefaultEnd">#E64A19</color>                                     <!-- DeepOrange 50 700 -->
+
+    <!-- You already turn Button color -->
+    <color name="you_already_turn_button_text_color">#ECEFF1</color>                                <!-- BlueGray 50 100 -->
+
+    <!-- You already turn buttons default color -->
+    <color name="you_already_turn_button_default_color_start">#6A1B9A</color>                       <!-- Purple 50 800 -->
+    <color name="you_already_turn_button_default_color_center">#7B1FA2</color>                      <!-- Purple 50 700 -->
+    <color name="you_already_turn_button_default_color_end">#6A1B9A</color>                         <!-- Purple 50 800 -->
+
+    <!-- You already turn buttons press color -->
+    <color name="you_already_turn_button_press_color_start">#012F47</color>                         <!-- DeepBlue 60 700 -->
+    <color name="you_already_turn_button_press_color_center">#01476A</color>                        <!-- DeepBlue 60 600 -->
+    <color name="you_already_turn_button_press_color_end">#012F47</color>                           <!-- DeepBlue 60 700 -->
 </resources>

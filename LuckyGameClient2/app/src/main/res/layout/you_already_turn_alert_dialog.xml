@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    >
+    <!-- GetWindow == system drawable.color.glass -->
+    <!-- ImageView close button TOP / RIGHT -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:id="@+id/you_already_turn_image_view_close"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_alert_dialog_close"
+        />
+    <!-- Android.View.Card.V7.AlertDialog -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/you_already_turn_alert_dialog_background"
+        >
+        <!-- LinearLayout - vertical -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!-- LinearLayout vertical, fill -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                >
+                <!-- Text.header name.you_already_turn -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/you_already_turn_text_header"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="@color/you_already_turn_alert_dialog_text_view_header_text"
+                    android:text="@string/you_already_turn_alert_dialog_header_message"
+                    />
+                <!-- ImageView -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/you_already_turn_image_view_logo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/you_aiready_turn_image"
+                    />
+                <!-- Text.content content.you_already_turn -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/you_already_turn_text_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="7dp"
+                    android:textAlignment="center"
+                    android:textStyle="normal"
+                    android:textSize="13dp"
+                    android:textColor="@color/you_already_turn_alert_dialog_text_view_content_text"
+                    android:text="@string/you_already_turn_alert_dialog_content_message"
+                    />
+                <!-- Button you already turn continue -->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/you_already_turn_button_continue"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/you_already_turn_button_text_color"
+                    android:text="@string/you_already_turn_alert_dialog_button_continue_txt"
+                    android:background="@drawable/you_already_turn_button_selected"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

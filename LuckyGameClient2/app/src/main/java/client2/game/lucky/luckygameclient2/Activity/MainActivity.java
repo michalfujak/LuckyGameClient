@@ -1,9 +1,13 @@
 package client2.game.lucky.luckygameclient2.Activity;
 
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
@@ -27,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
     Button button_submit, button_disconnect;
     // MaterialEditText
     MaterialEditText edit_place_money, edit_place_value;
+
+    // AlertDialog
+    Dialog youAlreadyTurnDialog;
+    // Buttons
+    Button youAlreadyTurnButtonContinue;
+    //
+    ImageView youAlreadyTurnImageViewClose;
 
     // Socket.client (io.socket.client)
     Socket socket;
@@ -52,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
         txt_money = (TextView)findViewById(R.id.textMoney);
         txt_status = (TextView)findViewById(R.id.textHomeStatus);
         txt_score = (TextView)findViewById(R.id.scoreTextViewDisplay);
+        //
+        // AlertDialog you already turn initializable
+        youAlreadyTurnDialog = new Dialog(this);
         //
         button_submit = (Button)findViewById(R.id.button_submit_action);
         button_disconnect = (Button)findViewById(R.id.button_disconnect);
@@ -121,7 +135,31 @@ public class MainActivity extends AppCompatActivity {
                         else
                         {
                             // You already turn
-                            StyleableToast.makeText(MainActivity.this, getString(R.string.lucky_game_message_you_already_turn), R.style.toast_lucky_game_blue_cube).show();
+                            //
+                            // StyleableToast.makeText(MainActivity.this, getString(R.string.lucky_game_message_you_already_turn), R.style.toast_lucky_game_blue_cube).show();
+                            // V7.AlertDialog
+                            youAlreadyTurnDialog.setContentView(R.layout.you_already_turn_alert_dialog);
+                            youAlreadyTurnImageViewClose = (ImageView) youAlreadyTurnDialog.findViewById(R.id.you_already_turn_image_view_close);
+                            youAlreadyTurnButtonContinue = (Button) youAlreadyTurnDialog.findViewById(R.id.you_already_turn_button_continue);
+
+                            // ImageView clicked
+                            youAlreadyTurnImageViewClose.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    youAlreadyTurnDialog.dismiss();
+                                }
+                            });
+
+                            // Button continue clicked
+                            youAlreadyTurnButtonContinue.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    youAlreadyTurnDialog.dismiss();
+                                }
+                            });
+                            // Dialog staring is visibility
+                            youAlreadyTurnDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                            youAlreadyTurnDialog.show();
                         }
                     }
                     else

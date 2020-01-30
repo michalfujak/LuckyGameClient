@@ -29,5 +29,10 @@
     <!-- Console message status -->
     <string name="console_mesaage_lucky_game_connect">Pripojené</string>
     <string name="console_message_lucky_game_disconnect">Odpojenie</string>
+
+    <!-- AlertDialog - You already turn  -->
+    <string name="you_already_turn_alert_dialog_header_message">Sázka už bola vložená</string>
+    <string name="you_already_turn_alert_dialog_content_message">V tomto kole ste už vsadili sázku. Prosím počkajte na dalšie kolo kým to spracuje server a vyhodnotí dalšie otočenie.</string>
+    <string name="you_already_turn_alert_dialog_button_continue_txt">Pokračovať</string>
 </resources>
 <!-- URL https://www.youtube.com/watch?v=GW2ovTrIgsc&t=1543s, Time: 47:35 -->
