@@ -24,9 +24,11 @@ import io.socket.emitter.Emitter;
 
 public class MainActivity extends AppCompatActivity {
 
-    // objects
-    // TextView
-    TextView txt_count, txt_result, txt_money, txt_status, txt_score;
+    /**
+     * @component Component.initializable
+     * @component TextView
+    */
+    TextView txt_count, txt_result, txt_money, txt_status, txt_score, txt_winner, txt_bet_display;
     // Buttons
     Button button_submit, button_disconnect;
     // MaterialEditText
@@ -48,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
 
     int resultNumber = -1;
 
+    // String component top menu
+    private String str_winner_value_null = "0";
+    private String str_winner_value;
+    private String str_bet_value;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +69,11 @@ public class MainActivity extends AppCompatActivity {
         txt_result = (TextView)findViewById(R.id.textResult);
         txt_money = (TextView)findViewById(R.id.textMoney);
         txt_status = (TextView)findViewById(R.id.textHomeStatus);
-        txt_score = (TextView)findViewById(R.id.scoreTextViewDisplay);
+
+        // Component Display top-menu
+        txt_score = (TextView)findViewById(R.id.text_view_score_item_display);
+        txt_winner = (TextView)findViewById(R.id.text_view_winner_item_display);
+        txt_bet_display = (TextView)findViewById(R.id.text_view_bet_item_display);
         //
         // AlertDialog you already turn initializable
         youAlreadyTurnDialog = new Dialog(this);
@@ -93,7 +104,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //
-        // Clicked submit
+        /*
+        * @function Clicked
+        * @Button button_submit
+         */
         button_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,6 +135,12 @@ public class MainActivity extends AppCompatActivity {
                                 // SK -> Priradenie do pola score
                                 // add score
                                 txt_score.setText(String.valueOf(Common.score));
+                                // BET action top menu...
+                                str_bet_value = String.valueOf(edit_place_value.getText());
+                                txt_bet_display.setText(str_bet_value);
+                                //
+                                // set null TOP MENU Item BET
+                                txt_winner.setText(String.valueOf(str_winner_value_null));
                                 //
                                 // Anti multiple bet in 1 turn
                                 // SK -> Jeden nasobok pre jedno otocenie.
@@ -176,8 +196,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //
-        // Connect socket
+        /*
+        *
+        * @exception IO.exception
+        *
+         */
         try
         {
             socket = IO.socket(getText(R.string.config_connect_ip).toString());
@@ -211,13 +234,13 @@ public class MainActivity extends AppCompatActivity {
 
     /*
     * @function registerAllEventForGame
+    * @param undefined null
     * @return null
-    *
      */
     private void registerAllEventForGame()
     {
         // register game
-        // call JS function broadcast
+        // call JS function broadcast method
         socket.on("broadcast", new Emitter.Listener() {
             @Override
             public void call(final Object... args) {

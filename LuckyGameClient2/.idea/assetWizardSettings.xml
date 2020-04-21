@@ -34,11 +34,11 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="01476a" />
+                                      <entry key="backgroundColor" value="4a148c" />
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\micha\Downloads\iconfinder_Dice_128401.png" />
+                                      <entry key="foregroundImage" value="C:\IT_Projekty\Images_projects\LuckyGameClient2\done\card_money.png" />
                                       <entry key="foregroundLayerName" value="ic_launcher_foreground" />
-                                      <entry key="outputName" value="ic_lucky_game2_icon_cube" />
+                                      <entry key="outputName" value="icon_lucky_game_client_2" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -7,21 +7,174 @@
     tools:context=".Activity.MainActivity"
     android:background="@drawable/luckygameclientbackgroundview"
     >
-    <!-- Score DIV.TextView.Component -->
-    <TextView
-        android:id="@+id/scoreTextViewDisplay"
-        android:background="@drawable/score_view_text_background"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/score_default_value"
-        android:textColor="@color/colorScoreTextColor"
-        android:textSize="24sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <!-- TOP MENU  -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/linear_layout_background_panel_top_menu"
+        style="@style/linearlayout_panel_top_menu"
+        >
+        <!-- LinearLayout images backgroud -->
+        <!-- ITEM SCORE START -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:id="@+id/linear_layout_box_item_score"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/linear_layout_icon_score_backgroud"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/top_menu_score_icon_background"
+                android:elevation="2dp"
+                android:orientation="horizontal">
+                <!-- ImageView -->
+                <ImageView
+                    android:id="@+id/image_icon_score"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/gold_coin2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/text_view_score_item_display"
+                android:background="@drawable/top_menu_score_item_background"
+                android:elevation="2dp"
+                android:fontFamily="@font/thebomb_font"
+                android:paddingStart="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="0dp"
+                android:text="10000"
+                android:textColor="@color/color_text_top_menu_item_text_deepblue"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+        <!-- ITEM SCORE END -->
+        <!-- LinearLayout images winner -->
+        <!-- ITEM WINNER START -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:id="@+id/linear_layout_box_item_winner"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/linear_layout_icon_winner_backgroud"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/top_menu_winner_icon_background"
+                android:elevation="2dp"
+                android:orientation="horizontal">
+                <!-- ImageView -->
+                <ImageView
+                    android:id="@+id/image_icon_adds"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/winner" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/text_view_winner_item_display"
+                android:background="@drawable/top_menu_winner_item_background"
+                android:elevation="2dp"
+                android:fontFamily="@font/thebomb_font"
+                android:paddingStart="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="35dp"
+                android:paddingBottom="0dp"
+                android:text="100"
+                android:textColor="@color/color_text_top_menu_item_text_deepblue"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+        <!-- ITEM WINNER END -->
+        <!-- ITEM BET START -->
+        <!-- LinearLayout images backgroud -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:id="@+id/linear_layout_box_item_adds"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/linear_layout_icon_bet_backgroud"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/top_menu_bet_icon_background"
+                android:elevation="2dp"
+                android:orientation="horizontal">
+                <!-- ImageView -->
+                <ImageView
+                    android:id="@+id/image_icon_bet"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/dice_cube" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/text_view_bet_item_display"
+                android:background="@drawable/top_menu_bet_item_background"
+                android:elevation="2dp"
+                android:fontFamily="@font/thebomb_font"
+                android:paddingStart="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="35dp"
+                android:paddingBottom="0dp"
+                android:text="0"
+                android:textColor="@color/color_text_top_menu_item_text_deepblue"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+        <!-- ITEM BET START -->
+    </LinearLayout>
+    </LinearLayout>
     <!-- LinearLayout -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,6 +208,8 @@
                     style="@style/count_view_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/thebomb_font"
+                    android:textSize="13sp"
                     android:drawableStart="@drawable/ic_timeline_24dp"
                     android:text="@string/count_value" />
                 <!-- TextView Result -->
@@ -63,6 +218,8 @@
                     style="@style/result_view_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/thebomb_font"
+                    android:textSize="13sp"
                     android:background="@drawable/result_view_text_background"
                     android:text="@string/result_value"
                     android:visibility="visible" />
@@ -72,6 +229,8 @@
                     style="@style/money_view_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/thebomb_font"
+                    android:textSize="13sp"
                     android:background="@drawable/money_view_text_background"
                     android:text="@string/money_value"
                     android:visibility="visible" />
@@ -141,6 +300,8 @@
                 android:layout_height="50dp"
                 android:text="@string/button_submit_text"
                 android:layout_weight="1"
+                android:fontFamily="@font/thebomb_font"
+                android:textSize="8sp"
                 android:background="@drawable/button_submit_background"
                 style="@style/submit_button"
                 />
@@ -151,6 +312,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/thebomb_font"
+                android:textSize="8sp"
                 android:background="@drawable/button_disconnect_background"
                 android:text="@string/button_disconnect" />
 

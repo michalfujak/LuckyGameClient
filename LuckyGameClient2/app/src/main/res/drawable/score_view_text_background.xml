@@ -3,6 +3,5 @@
     <!-- -->
     <solid android:color="@color/colorScoreBackgroundTextArea" />
     <corners
-        android:radius="5dp"
-        android:topRightRadius="50dp" />
+        android:radius="35dp" />
 </shape>

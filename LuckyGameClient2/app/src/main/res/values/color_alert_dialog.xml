@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Android.View.Card.V7.AlertDialog colors -->
-    <color name="you_already_turn_alert_dialog_background">#f0263238</color>                        <!-- BlueGray 50 900     --><!-- Opacity 95% -->
+    <color name="you_already_turn_alert_dialog_background">#E1263238</color>                        <!-- BlueGray 50 900   --><!-- Opacity 90% E1 -->
+    <color name="you_not_enought_money_dialog_background">#E1263238</color>                         <!-- BlueGray 50 900   --><!-- Opacity 90% E1 -->
     <color name="you_already_turn_alert_dialog_text">#ECEFF1</color>                                <!-- BlueGray 50 100 -->
 
     <!-- AlertDialog TextView.color -->
-    <color name="you_already_turn_alert_dialog_text_view_header_text">#BA68C8</color>               <!-- Purple 50 300 -->
+    <color name="you_already_turn_alert_dialog_text_view_header_text">#ECEFF1</color>               <!-- BlueGray 50 000 -->
     <color name="you_already_turn_alert_dialog_text_view_content_text">#ECEFF1</color>              <!-- BlueGray 50 100 -->
 </resources>

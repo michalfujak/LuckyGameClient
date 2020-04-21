@@ -17,6 +17,8 @@
     <color name="colorLinearLayoutBackgroundPanel3">#E1263238</color>                               <!-- BlueGray 50 900     --><!-- Opacity 90% -->
     <!-- LinearLayout MODUL.Panel4 Background -->
     <color name="colorLinearLayoutBackgroundPanel4">#E1263238</color>                               <!-- BlueGray 50 900     --><!-- Opacity 90% -->
+    <!-- LinearLayout MODUL.PanelTOP.menu Background -->
+    <color name="colorLinearLayoutBackgroundPanelTopMenu">#00263238</color>                         <!-- BlueGray 50 900     --><!-- Opacity 0% -->
     <!-- Score TextArea Background Text.component -->
     <color name="colorScoreBackgroundTextArea">#E1263238</color>                                    <!-- BlueGray 50 900     --><!-- Opacity 90% -->
     <color name="colorScoreTextColor">#90A4AE</color>                                               <!-- BlueGray 50 300 -->

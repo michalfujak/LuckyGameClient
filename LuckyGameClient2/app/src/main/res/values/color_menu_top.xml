@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TOP MENU ICON BACKGROUND 26x26 -->
+    <!-- Colors Icon Backgroud 26x26 BlueGray -->
+    <color name="color_top_menu_icon_bluegray_background_start">#455A64</color>                     <!-- BlueGray 50 700 -->
+    <color name="color_top_menu_icon_bluegray_background_center">#263238</color>                    <!-- BlueGray 50 900 -->
+    <color name="color_top_menu_icon_bluegray_background_end">#263238</color>                       <!-- BlueGray 50 900 -->
+
+    <!-- Colors Icon Backgroud 26x26 Purple 50 -->
+    <color name="color_top_menu_icon_purple_background_start">#6A1B9A</color>                       <!-- Purple 50 800 -->
+    <color name="color_top_menu_icon_purple_background_center">#4A148C</color>                      <!-- Purple 50 900 -->
+    <color name="color_top_menu_icon_purple_background_end">#4A148C</color>                         <!-- Purple 50 900 -->
+
+    <!-- Colors Icon Backgroud 26x26 Green 50 -->
+    <color name="color_top_menu_icon_green_background_start">#388E3C</color>                        <!-- Green 50 700 -->
+    <color name="color_top_menu_icon_green_background_center">#1B5E20</color>                       <!-- Green 50 900 -->
+    <color name="color_top_menu_icon_green_background_end">#1B5E20</color>                          <!-- Green 50 900 -->
+
+    <!-- Colors Icon Backgroud 26x26 Orange 50 -->
+    <color name="color_top_menu_icon_orange_background_start">#F57C00</color>                       <!-- Orange 50 700 -->
+    <color name="color_top_menu_icon_orange_background_center">#E65100</color>                      <!-- Orange 50 900 -->
+    <color name="color_top_menu_icon_orange_background_end">#E65100</color>                         <!-- Orange 50 900 -->
+
+    <!-- TOP MENU ITEMS -->
+    <!-- Colors Top Menu Item Background BlueGray  -->
+    <color name="color_top_menu_item_bluegray_start">#455A64</color>                                <!-- BlueGray 50 700 -->
+    <color name="color_top_menu_item_bluegray_center">#263238</color>                               <!-- BlueGray 50 900 -->
+    <color name="color_top_menu_item_bluegray_end">#263238</color>                                  <!-- BlueGray 50 900 -->
+
+    <!-- Colors Top Menu Item Background Orange  -->
+    <color name="color_top_menu_item_orange_start">#F57C00</color>                                  <!-- Orange 50 700 -->
+    <color name="color_top_menu_item_orange_center">#E65100</color>                                 <!-- Orange 50 700 -->
+    <color name="color_top_menu_item_orange_end">#E65100</color>                                    <!-- Orange 50 800 -->
+
+    <!-- Colors Top Menu Item Background DeepBlue  -->
+    <color name="color_top_menu_item_deepblue_start">#01202F</color>                                <!-- DeepBlue 50 800 -->
+    <color name="color_top_menu_item_deepblue_center">#01476A</color>                               <!-- DeepBlue 50 600 -->
+    <color name="color_top_menu_item_deepblue_end">#01202F</color>                                  <!-- DeepBlue 50 800 -->
+
+    <!-- Colors Top Menu Item Background Green  -->
+    <color name="color_top_menu_item_green_start">#388E3C</color>                                   <!-- Green 50 700 -->
+    <color name="color_top_menu_item_green_center">#1B5E20</color>                                  <!-- Green 50 900 -->
+    <color name="color_top_menu_item_green_end">#1B5E20</color>                                     <!-- Green 50 900 -->
+
+    <!-- Colors Top Menu Item Background Black  -->
+    <color name="color_top_menu_item_black_start">#616161</color>                                   <!-- Black 50 700 -->
+    <color name="color_top_menu_item_black_center">#212121</color>                                  <!-- Black 50 900 -->
+    <color name="color_top_menu_item_black_end">#212121</color>                                     <!-- Black 50 900 -->
+
+    <!-- Colors Top Menu Item Background Red  -->
+    <color name="color_top_menu_item_red_start">#D32F2F</color>                                     <!-- Red 50 700 -->
+    <color name="color_top_menu_item_red_center">#B71C1C</color>                                    <!-- Red 50 900 -->
+    <color name="color_top_menu_item_red_end">#B71C1C</color>                                       <!-- Red 50 900 -->
+
+    <!-- Colors Top Menu Item Background Purple  -->
+    <color name="color_top_menu_item_purple_start">#4A148C</color>                                  <!-- Purple 50 900 -->
+    <color name="color_top_menu_item_purple_center">#7B1FA2</color>                                 <!-- Purple 50 700 -->
+    <color name="color_top_menu_item_purple_end">#4A148C</color>                                    <!-- Purple 50 900 -->
+
+    <!-- Text Colors TopMenu Text item -->
+    <color name="color_text_top_menu_item_text_bluegray">#CFD8DC</color>                            <!-- BlueGray 100 -->
+    <color name="color_text_top_menu_item_text_orange">#FFE0B2</color>                              <!-- Orange 50 100 -->
+    <color name="color_text_top_menu_item_text_deepblue">#cbedfd</color>                            <!-- DeepBlue 100 -->
+    <color name="color_text_top_menu_item_text_green">#C8E6C9</color>                               <!-- Green 100 -->
+    <color name="color_text_top_menu_item_text_black">#F5F5F5</color>                               <!-- Black 100 -->
+    <color name="color_text_top_menu_item_text_red">#FFCDD2</color>                                 <!-- Red 100 -->
+    <color name="color_text_top_menu_item_text_purple">#E1BEE7</color>                              <!-- Purple 100 -->
+    
+    <!-- TOP MENU Stroke icon 26x26 -->
+    <color name="color_top_menu_stroke_bluegray">#607D8B</color>                                    <!-- BlueGray 500 -->
+    <color name="color_top_menu_stroke_purple">#6A1B9A</color>                                      <!-- Purple 800 -->
+    <color name="color_top_menu_stroke_green">#4CAF50</color>                                       <!-- Green 50 500 -->
+    <color name="color_top_menu_stroke_orange">#FF9800</color>                                      <!-- Orange 50 500 -->
+</resources>
