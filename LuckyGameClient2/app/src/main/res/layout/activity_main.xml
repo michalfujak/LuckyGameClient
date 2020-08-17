@@ -187,6 +187,218 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
+        <!-- Horizont ScrollView Menus Start -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/linear_layout_horizont_menu_items_box"
+            android:layout_gravity="clip_horizontal"
+            android:gravity="start"
+            android:orientation="vertical"
+            style="@style/linear_layout_horizont_menu_items_box"
+            >
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scroll_view_horizont_menu_items"
+                >
+                <!-- Horizont Scroll View - Content -->
+                <LinearLayout
+                    android:id="@+id/linear_layout_horizont_menu_items_content"
+                    style="@style/linear_layout_horizont_menu_items_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- User.client Profile -->
+                    <LinearLayout
+                        android:id="@+id/linear_layout_horizont_menu_profile_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/linear_layout_horizont_menu_profile_background"
+                        android:gravity="start"
+                        android:orientation="horizontal"
+                        android:paddingEnd="10dp"
+                        android:padding="2dp">
+                        <!-- LinearLayout AREA [.image] -->
+                        <LinearLayout
+                            android:id="@+id/linear_layout_profile_area_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingStart="5dp">
+
+                            <ImageView
+                                android:id="@+id/image_view_picture_profile"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:src="@drawable/icon_avatar_profile" />
+                        </LinearLayout>
+                        <!-- User.client Profile - Content.text -->
+                        <LinearLayout
+                            android:id="@+id/linear_layout_profile_content_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingStart="20dp">
+                            <!-- Main Content -->
+                            <TextView
+                                android:id="@+id/text_view_profile_main_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/horizont_top_menu_profile_name_user"
+                                android:textColor="@color/colorViewTextProfileContentHeadTextColor"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                />
+                            <!-- UID Content -->
+                            <TextView
+                                android:id="@+id/text_view_profile_content_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/horizont_top_menu_profile_uuid_value"
+                                android:textColor="@color/colorViewTextProfileContentUuidTextColor"
+                                android:textSize="11sp"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- LinearLayout Panel Champion -->
+                    <LinearLayout
+                        android:id="@+id/linear_layout_horizont_menu_champion_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/linear_layout_horizont_menu_champion_background"
+                        android:gravity="start"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+                        <!-- LinearLayout AREA [.image] -->
+                        <LinearLayout
+                            android:id="@+id/linear_layout_champion_area_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="0dp">
+
+                            <ImageView
+                                android:id="@+id/image_view_picture_champion"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:src="@drawable/champion_winner"
+                                />
+                        </LinearLayout>
+                        <!-- User.client Champion - Content.text -->
+                        <LinearLayout
+                            android:id="@+id/linear_layout_champion_content_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp">
+                            <!-- Main Content -->
+                            <TextView
+                                android:id="@+id/text_view_champion_main_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/horizont_top_menu_champion_default_value"
+                                android:textColor="@color/colorViewTextChampionContentTextColor"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- LinearLayout Panel WebSite -->
+                    <LinearLayout
+                        android:id="@+id/linear_layout_horizont_menu_website_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/linear_layout_horizont_menu_website_background"
+                        android:gravity="start"
+                        android:orientation="horizontal"
+                        android:paddingEnd="0dp"
+                        android:padding="2dp"
+                        >
+                        <!-- LinearLayout AREA [.image] -->
+                        <LinearLayout
+                            android:id="@+id/linear_layout_website_area_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingStart="3dp"
+                            android:paddingEnd="3dp"
+                            android:paddingBottom="3dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image_view_picture_website"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:src="@drawable/website"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- LinearLayout Panel Menu - END -->
+                    <LinearLayout
+                        android:id="@+id/linear_layout_horizont_menu_menu_end_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/linear_layout_horizont_menu_menu_background"
+                        android:gravity="start"
+                        android:orientation="horizontal"
+                        android:padding="2dp"
+                        >
+                        <!-- LinearLayout AREA [.image] -->
+                        <LinearLayout
+                            android:id="@+id/linear_layout_menu_end_area_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingStart="3dp"
+                            android:paddingEnd="3dp"
+                            android:paddingBottom="3dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image_view_picture_menu_end"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:src="@drawable/icon_menu_32x32dp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+        <!-- Horizont ScrollView Menus End -->
         <!-- Android.View.Card.7V.Component -->
         <android.support.v7.widget.CardView
             android:id="@+id/viewCard1"
@@ -301,7 +513,7 @@
                 android:text="@string/button_submit_text"
                 android:layout_weight="1"
                 android:fontFamily="@font/thebomb_font"
-                android:textSize="8sp"
+                android:textSize="12sp"
                 android:background="@drawable/button_submit_background"
                 style="@style/submit_button"
                 />
@@ -313,7 +525,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/thebomb_font"
-                android:textSize="8sp"
+                android:textSize="12sp"
                 android:background="@drawable/button_disconnect_background"
                 android:text="@string/button_disconnect" />
 

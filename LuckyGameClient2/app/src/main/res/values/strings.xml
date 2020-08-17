@@ -4,6 +4,8 @@
     <string name="result_value">0</string>
     <string name="money_value">0</string>
     <string name="score_default_value">1000</string>
+    <string name="winner_default_value">800</string>
+    <string name="bet_default_value">5</string>
     <string name="home_status_value">Režim: Debug version 2.2.100</string>
     <string name="bet_value_hint_text">Vlož svoju sázku</string>
     <string name="money_value_text">Vlož svoje peniaze</string>
@@ -11,6 +13,11 @@
     <string name="button_disconnect">Odpojiť</string>
     <string name="button_value_connect">Pripojenie</string>
     <string name="button_value_disconnect">Odpojenie</string>
+
+    <!-- Horizont TOP - MENU -->
+    <string name="horizont_top_menu_profile_name_user">Name - { Define::User }</string>
+    <string name="horizont_top_menu_profile_uuid_value">UID: 021545665545655555</string>
+    <string name="horizont_top_menu_champion_default_value">0</string>
     <!-- Messages -->
     <string name="message_connected_done">Pripojené</string>
     <string name="message_timer_txt">Odpočet: </string>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Horizont Menu Items -->
+    <!-- LinearLayout Background Colors [ PANEL - PROFIL ] -->
+    <color name="colorLinearLayoutProfileBackgroundStart">#E101202F</color>                         <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <color name="colorLinearLayoutProfileBackgroundCenter">#E101202F</color>                        <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <color name="colorLinearLayoutProfileBackgroundEnd">#E101202F</color>                           <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <!-- LinearLayout Background Color [ PANEL - CHAMPION ] -->
+    <color name="colorLinearLayoutChampionBackgroundStart">#E101202F</color>                        <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <color name="colorLinearLayoutChampionBackgroundCenter">#E101202F</color>                       <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <color name="colorLinearLayoutChampionBackgroundEnd">#E101202F</color>                          <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <!-- LinearLayout Background Color [ PANEL - WEBSITE ] -->
+    <color name="colorLinearLayoutWebsiteBackgroundStart">#E101202F</color>                         <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <color name="colorLinearLayoutWebsiteBackgroundCenter">#E101202F</color>                        <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <color name="colorLinearLayoutWebsiteBackgroundEnd">#E101202F</color>                           <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <!-- LinearLayout Background Color [ PANEL - MENU ] -->
+    <color name="colorLinearLayoutMenuBackgroundStart">#E101202F</color>                            <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <color name="colorLinearLayoutMenuBackgroundCenter">#E101202F</color>                           <!-- DeepBlue 700 --><!-- Opacity 90% -->
+    <color name="colorLinearLayoutMenuBackgroundEnd">#E101202F</color>                              <!-- DeepBlue 700 --><!-- Opacity 90% -->
+
+
+    <!-- Horizont Menu Items Stroke = Border -->
+    <color name="colorLinearLayoutProfileStroke">#0279B4</color>                                    <!-- DeepBlue 300 -->
+    <color name="colorLinearLayoutChampionStroke">#0279B4</color>                                   <!-- DeepBlue 300 -->
+    <color name="colorLinearLayoutWebsiteStroke">#0279B4</color>                                    <!-- DeepBlue 300 -->
+    <color name="colorLinearLayoutMenuStroke">#0279B4</color>                                       <!-- DeepBlue 300 -->
+
+    <!-- Horizont Menu Items Content.color -->
+    <color name="colorViewTextProfileContentHeadTextColor">#90A4AE</color>                          <!-- BlueGray 50 100 -->
+    <color name="colorViewTextProfileContentUuidTextColor">#90A4AE</color>                          <!-- BlueGray 50 100 -->
+    <!-- PANEL - Champion -->
+    <color name="colorViewTextChampionContentTextColor">#FDD835</color>                             <!-- Yellow 50 500 -->
+</resources>
